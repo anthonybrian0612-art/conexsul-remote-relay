@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: conexsul-remote-relay
+    runtime: docker
+    plan: free
+    healthCheckPath: /
+    envVars:
+      - key: RELAY_TOKEN
+        generateValue: true
